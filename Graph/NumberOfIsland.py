@@ -1,5 +1,6 @@
+import collections
 class Solution:
-    def numIslands(self, grid: List[List[str]]) -> int:
+    def numIslands(self, grid: list[list[str]]) -> int:
         if not grid:
             return 0
         rows, columns = len(grid), len(grid[0])
@@ -63,7 +64,8 @@ if __name__ == '__main__':
   ["1","1","1","1","0"],
   ["1","1","0","1","0"],
   ["1","1","0","0","0"],
-  ["0","0","0","0","0"]
+  ["0","0","0","1","0"]
 ]
     solution = Solution()
     island = solution.numIslands(grid)
+    print(island)
